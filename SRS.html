@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SRS of Team Codejavu</title>
+
+        <style>
+            body {
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                                Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+                                Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+                                "Segoe UI Symbol";
+                    padding: 0;
+                    margin: 0;
+                }
+
+                #Content-div{
+                  position: absolute;
+                  left: 30%;
+                  right: 10%;
+                }
+
+                #layout-menu-div{
+                  position: fixed;
+                  overflow-y: scroll;
+                  background: #40E0D0;
+                  border: 1px solid #dddddd;
+                  padding-top: 0.5em;
+                  padding-left: 8px;
+                  padding-right: 8px;
+                  font-size: 1.0em;
+                  height: 100%; width: auto;
+                  white-space: nowrap;
+                  text-align: left;
+                }
+
+                #layout-menu {
+
+                }
+
+                #layout-menu a {
+                    padding: 0px;
+                    line-height: 2;
+                }
+
+                a:hover, a:hover > tt{
+                    border-bottom: 1.25px #1a1e24 solid;
+                    color: #ff0000;
+                }
+
+                #layout-menu a.current:link, #layout-menu a.current:visited {
+                    color: #586069;
+                    font-weight: 600;
+                }
+
+                #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
+                    color: #00008b;
+                    text-decoration: none;
+                }
+
+                #layout-menu a:hover {
+                    color: #41042e;
+                    text-decoration: none;
+                }
+
+                div.menu-category {
+                    margin-top: 14px;
+                    padding-top: 8px;
+                    padding-bottom: 0.1em;
+                    padding-left: 5px;
+                    padding-right: 25px;
+                    font-size: 18px;
+                    font-family: Garamond;
+                    font-style: bold;
+                    line-height: 2;
+                    border-top: 0.8px solid #FFFFFF;
+                }
+
+                div.menu-item {
+                    font-size: 14px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+
+                div.menu-item2 {
+                    font-size: 12px;
+                    padding-left: 40px;
+                    padding-right: 25px;
+                }
+
+                table {
+                    border-collapse: collapse;
+                }
+
+                td {
+                    padding-left: 0.5em;
+                    padding-right: 0.5em;
+                    text-align: left;
+
+                    border: 1px solid #d1d5da;
+                    line-height: 2;
+                }
+
+                button {
+                  position: fixed;
+                  right: 0;
+                  bottom: 0;
+                  margin: 10px;
+                  cursor: pointer;
+                  background-color: #40E0D0;
+                  border: 2px solid #000000;
+                  color: #FFFFFF;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                }
+                @media print {
+                  #printPageButton, #layout-menu-div{
+                  display: none;
+
+                  }
+
+                }
+        </style>
+
+        <style media="screen">
+              .hide-on-screen {display:none;}
+              .yesPrint, .noPrint {display:block;}
+
+              @media print {
+              .noPrint {display:none;}
+              .hide-on-screen {display:block;}
+              }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div><button id = "printPageButton" target="blank" onclick="window.print();">Print</button></div>
+
+        <table id="tlayout">
+            <tr valign="top">
+              <td id="layout-menu">
+
+                <div id="layout-menu-div"><div class="menu-category">1. Introduction</div>
+
+                    <div class="menu-item"><a href=#1.1>1.1 Purpose</a></div>
+                    <div class="menu-item"><a href=#1.2>1.2 Document Conventions</a></div>
+                    <div class="menu-item"><a href=#1.3>1.3 Intended Audience and Reading Suggestions</a></div>
+                    <div class="menu-item"><a href=#1.4>1.4 Product Scope</a></div>
+                    <div class="menu-item"><a href=#1.5>1.5 References</a></div>
+
+                <div class="menu-category">2. Overall Description</div>
+
+                    <div class="menu-item"><a href=#2.1>2.1 Product Perspective</a></div>
+                    <div class="menu-item"><a href=#2.2>2.2 Product Functions</a></div>
+                    <div class="menu-item"><a href=#2.3>2.3 User Classes and Characteristics</a></div>
+                    <div class="menu-item"><a href=#2.4>2.4 Operating Environment</a></div>
+                    <div class="menu-item"><a href=#2.5>2.5 Design and Implementation Constraints</a></div>
+                    <div class="menu-item"><a href=#2.6>2.6 User Documentation</a></div>
+                    <div class="menu-item"><a href=#2.7>2.7 Assumptions and Dependencies</a></div>
+
+                <div class="menu-category">3. External Interface Requirements</div>
+
+                    <div class="menu-item"><a href=#3.1>3.1 User Interfaces</a></div>
+                    <div class="menu-item"><a href=#3.2>3.2 Hardware Interfaces</a></div>
+                    <div class="menu-item"><a href=#3.3>3.3 Software Interfaces</a></div>
+                    <div class="menu-item"><a href=#3.4>3.4 Communications Interfaces</a></div>
+
+                <div class="menu-category">4. System Features</div>
+
+                      <div class="menu-item2"><a href=#4.1>4.1 Description and Priority</a></div>
+                      <div class="menu-item2"><a href=#4.2>4.2 Stimulus/Response Sequences</a></div>
+                      <div class="menu-item2"><a href=#4.3>4.3 Functional Requirements</a></div>
+
+
+                <div class="menu-category">5. Other Nonfunctional Requirements</div>
+
+                    <div class="menu-item"><a href=#5.1>5.1 Performance Requirements</a></div>
+                    <div class="menu-item"><a href=#5.2>5.2 Safety Requirements</a></div>
+                    <div class="menu-item"><a href=#5.3>5.3 Security Requirements</a></div>
+                    <div class="menu-item"><a href=#5.4>5.4 Software Quality Attributes</a></div>
+                    <div class="menu-item"><a href=#5.5>5.5 Business Rules</a></div>
+
+                <div class="menu-category"><a href=#6>6. Other Requirements</a></div>
+
+
+                <div class="menu-category"><a href=#AP_A>Appendix A: Glossary</a></div>
+
+                <div class="menu-category"><a href=#AP_B>Appendix B: Analysis Models</a></div>
+
+                <div class="menu-category"><a href=#AP_C>Appendix C: To Be Determined List</a></div>
+
+              </div>
+            </td>
+
+            <td id="layout-content">
+
+
+            <div id="Content-div">
+              <div class="hide-on-screen">
+            <head >
+                <hr size="10" width=" 100%" color="black">
+
+                <tittle> <h1 align="right">  Software Requirements
+                Specification </br>
+
+
+                </tittle>
+                </head>
+
+                <body>
+
+                 <h2 align="right"> for </h4>
+                 <h2 align="right" >DOCUMENT DlGITIZATION SERVICE FOR Plan lnternational Bangladesh  </h2>>
+                 <h3 align="right" > Version 1.0 approved </h1>
+                 <h3 align="right"> Prepared by : </br> Tasfia Samin </br> Hosnara Happy </br> Mohd. Istiaq hossain Junaid </br> Ahmed Omar Salim Adnan </h1>
+                 <h3 align="right" >  North South University </h1>
+                 <h3 align="right" >   19-03-2020 </h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+
+                <div class="hide-on-screen">
+                <h3>Table of contents</h3>
+                <table width="450" border="2" cellpadding="1">
+                  <tbody>
+                  <tr>
+                  <td><strong>1. Introduction</strong><br>
+                  1.1 Purpose<br>
+                  1.2 Document conventions<br>
+                  1.3 Intended audience<br>
+                  1.4 Additional information<br>
+                  1.5 Contact information/SRS team members<br>
+                  1.6 References<br>
+                  <strong>2. Overall Description</strong><br>
+                  2.1 Product perspective<br>
+                  2.2 Product functions<br>
+                  2.3 User classes and characteristics<br>
+                  2.4 Operating environment<br>
+                  2.5 User environment<br>
+                  2.6 Design/implementation constraints<br>
+                  2.7 Assumptions and dependencies<br>
+                  <strong>3. External Interface Requirements</strong><br>
+                  3.1 User interfaces<br>
+                  3.2 Hardware interfaces<br>
+                  3.3 Software interfaces<br>
+                  3.4 Communication protocols and interfaces<br>
+                  <strong>4. System Feature</strong><br>
+                  4.1 Description and priority<br>
+                  4.2 Stimulus/Response Sequences<br>
+                  4.3 Functional requirements<br>
+
+                  <strong>5. Other Nonfunctional Requirements</strong><br>
+                  5.1 Performance requirements<br>
+                  5.2 Safety requirements<br>
+                  5.3 Security requirements<br>
+                  5.4 Software quality attributes<br>
+                  5.5 Project documentation<br>
+                  5.6 User documentation<br>
+                  <strong>6. Other Requirements</strong><br>
+                  Appendix A: Terminology/Glossary/Definitions list<br>
+                  Appendix B: To be determined</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <h2>Revision History</h2>
+                  <table style="width:100% " border="2">
+                    <tr>
+                      <th>Name</th>
+                      <th>Date</th>
+                      <th>Reason For Changes</th>
+                      <th>Version</th>
+                    </tr>
+                    <tr>
+                      <td><br></td>
+                      <td><br></td>
+                      <td><br></td>
+                      <td><br></td>
+                    </tr>
+                    <tr>
+                      <td><br></td>
+                      <td><br></td>
+                      <td><br></td>
+                      <td><br></td>
+                    </tr>
+                  </table>
+
+                  <br><br><br>
+                </div>
+
+              <div><h1>1.Introduction</h1></div>
+
+                <div id="1.1">
+                  <h3>1.1 Purpose</h3>
+                  <p>We are aiming to build a digitized document management software which will change the entire documenting and file storage system to digital format for the department of finance. It will be accessible via web browser as well as phone application for searching and retrieving files.
+
+                   </p>
+                  <br> <hr>
+                </div>
+
+                <div id="1.2">
+                  <h3>1.2 Document Conventions</h3>
+                  <table style="width:100% " border="2">
+                    <tr>
+                      <th>Document Conventions</th>
+                      <th>Use</th>
+                    </tr>
+                    <tr>
+                      <td>OCR</td>
+                      <td>Scanning paper documents</td>
+                    </tr>
+                    <tr>
+                      <td>DBMS</td>
+                      <td>Managing, storing, retrieving data</td>
+                    </tr>
+                    <tr>
+                      <td>API</td>
+                      <td>User interface allows applicants to interact</td>
+                    </tr>
+                    <tr>
+                      <td>ER</td>
+                      <td>User Hierarchy must have relation to other users and can take control of their actions</td>
+                    </tr>
+                    <tr>
+                      <td>SOA</td>
+                      <td>communicate across different platforms and languages</td>
+                    </tr>
+                    <tr>
+                      <td>Dashboard</td>
+                      <td>Dashboard for private and public
+folders, uploaded documents and real-time notification Viewer
+</td>
+                    </tr>
+                    <tr>
+                      <td>CVS Format</td>
+                      <td>Upload and automatically link the attributes in designated file names without any limit</td>
+                    </tr>
+                    <tr>
+                      <td>Django</td>
+                      <td>Framework</td>
+                    </tr>
+                    <tr>
+                      <td>DMS</td>
+                      <td>Track, manage, store document and reduce paper</td>
+                    </tr>
+                  </table>
+                  <br> <hr>
+                </div>
+
+                <div id="1.3">
+                  <h3>1.3 Intended Audience and Reading Suggestions</h3>
+                  <p>This project is prototype for the digitized document management system and it is limited to Finance department of Plan International Bangladesh. We are going to implement it under the supervision of Dr. Nabeel Mohammed and after the compilation of the software entire organization will be benefitted from it</p>
+                  <br> <hr>
+                </div>
+
+                <div id="1.4">
+                  <h3>1.4 Product Scope</h3>
+                  <p>The system will be user friendly and easily accessible, store, manage, edit, send and delete documents. It is based on web-application and Relational Database. Database server will be there for handling huge data form different city branches of the organization. As everything is digitized so it will be less time consuming and efficient than typical existing manual system. We vision to provide best possible software system with low pricing and easy-to-use application</p>
+                  <br> <hr>
+                </div>
+
+                <div id="1.5">
+                  <h3>1.5 References</h3>
+                  <ul>
+                  <li><p>Bandakkanavar, R. (2019, October 17). Software Requirements Specification document with example. Krazytech. <a href="https://krazytech.com/projects/sample-software-requirements-specificationsrs-report-airline-database" target="_blank">https://krazytech.com/projects/sample-software-requirements-specificationsrs-report-airline-database</a></p></li>
+
+                  <li><p>Andrew Burak, Your Guide to Writing a Software Requirements Specification (SRS) Document. RELEVENT <a href="https://relevant.software/blog/software-requirements-specification-srs-document/" target="_blank">https://relevant.software/blog/software-requirements-specification-srs-document/</a></p></li>
+                  </ul>
+                  <br> <hr>
+
+                </div>
+
+                <br><br>
+
+              <div><h1>2. Overall Description</h1></div>
+
+                <div id="2.1">
+                  <h3>2.1 Product Perspective</h3>
+                  <p>
+                  The  product is a self-contained product which digitizes existing documents/files from the Department of Finance. The converted digital format is stored into storage defined by the Department of finance using a simple document system capable search and retrieval for attaching the same.The system will allow users to create accounts, upload unlimited files and search for required files.
+The system will contain helplines for users.The admin will be able to controll access,manage accounts, retrieve and recover data and
+ reset password.
+                  </p>
+                  <br> <hr>
+                </div>
+
+                <div id="2.2">
+                  <h3>2.2 Product Functions</h3>
+                  <p>
+<ol>
+
+<h4><li>Records Management </li></h4>
+<ul>
+  <li>Dashboard </li>
+  <li>Unlimited Folders, User Groups and Lock System</li>
+  <li>Public and Private Repository </li>
+  <li>Uploading Documents </li>
+  <li>Unlimited Indexing </li>
+  <li>Uploading Index file in CSV format </li>
+  <li>Routing Records </li>
+  <li>Automatic Archive </li>
+</ul>
+<h4><li> Accounts Management </li></h4>
+<ul>
+  <li>Unlimited  User Accounts, Profile picture Feature , User Management To Create New User and Link of User Account Profile </li>
+  <li>Password Reset Tool</li>
+  <li>Management Groups to  Manage Folders </li>
+  <li>Google Login </li>
+</ul>
+<h4><li> Search and Retrieval Management </li></h4>
+<ul>
+<li>Search Function and Filter Results </li>
+<li>Optical Character Recognition (OCR) </li>
+</ul>
+<h4><li>Reports Management </li></h4>
+<ul>
+<li>Records Count </li>
+</ul>
+
+<h4><li>Notification Management </li></h4>
+<ul>
+<li>Email Notification </li>
+<li>View Real-Time Notification </li>
+</ul>
+
+<h4><li>System Management </li></h4>
+<ul>
+<li>Accessible in Web Browser,Supports Multiple Platforms,Viewable from Desktop, Tablet and Mobile </li>
+<li>Service Oriented Architecture (SOA) </li>
+<li>Policy for Brute Force Attacks </li>
+</ul>
+
+<h4><li>Backup and Recovery  </li></h4>
+
+<h4><li>Maintenance and Technical Support </li></h4>
+<ul>
+<li>Telephone Support / Helpdesk Facility 24 x 7 days </li>
+</ul>
+</ol>
+                  </p>
+                  <br> <hr>
+                </div>
+
+                <div id="2.3">
+                  <h3>2.3 User Classes and Characteristics</h3>
+                  <p>
+<ol>
+
+<h4><li>Customer</li> </h4>
+<p>
+<ul>
+<li>Account Creation,login </li>
+<li>Upload Files </li>
+<li>View Permitted Files </li>
+<li>Get notifications  </li>
+</ul>
+</p>
+
+
+<h4><li>Manager </li></h4>
+<p>
+<ul>
+<li>Teams Management </li>
+<li>Get notification for files upload </li>
+<li>Assigning public and private repositories </li>
+<li>Assigning and Managing groups for foldesrs </li>
+</ul>
+</p>
+
+<h4><li>Technical Expertise </li></h4>
+<p>
+<ul>
+<li>Perform technical operations</li>
+<li>Maintainance of the product </li>
+<li>Manages secutity</li>
+<li>System update</li>
+<li>Server Management</li>
+</ul>
+</p>
+
+<h4><li>Admin </li></h4>
+<p>
+<ul>
+<li>Creating User Accounts </li>
+<li>Access Controll </li>
+<li>Accounts Management </li>
+<li>Data Retrieval and Recovery </li>
+<li>Password Reset </li>
+</ul>
+</p>
+
+</ol>
+
+
+
+                  </p>
+                  <br> <hr>
+                </div>
+
+                <div id="2.4">
+                  <h3>2.4 Operating Environment</h3>
+                  <p>
+Operating environment for the DOCUMENT DlGITIZATION SERVICE for Plan lnternationa Bangladesh is as listed below
+
+<ol type="1"l>
+<li>Client/Server System</li>
+<li>Operating system: Windows</li>
+<li>Database: Firebase </li>
+<li>platform: Java/PHP,Python/Django </li>
+</ol >
+
+                  </p>
+                  <br> <hr>
+                </div>
+
+                <div id="2.5">
+                  <h3>2.5 Design and Implementation Constraints</h3>
+                  <p>
+This system is provisioned to be built on the Django framework for web and PHP for Android which is highly flexible.Decision regarding which database to use will be taken considering the fact that data being exchanged or stored is large, and the appropriate data management system will yield efficient performance.The other constraints are corporate, hardware limitations, specific technologies,communications protocols , security considerations.
+
+                  </p>
+                  <br> <hr>
+                </div>
+
+                <div id="2.6">
+                  <h3>2.6 User Documentation</h3>
+                  <p>
+
+                  <h4>User Documentation Components</h4>
+<ol type="1">
+<li>User Manuals </li>
+<li>User Guide Tutorials </li>
+<li>Hotline </li>
+<li>Email </li>
+</ol>
+                  </p>
+                  <br> <hr>
+                </div>
+
+                <div id="2.7">
+                  <h3>2.7 Assumptions and Dependencies</h3>
+                  <p>
+Device will be enabled with Internet.All key project team members are available and have the necessary skills and knowledge to work on the project.The determined budget is accurate and covers all project expenses.The set deadlines and milestones are achievable and the project can be finished on time.
+
+                  </p>
+                  <br> <hr>
+                </div>
+
+                <br><br>
+
+              <div><h1>3. External Interface Requirements</h1></div>
+
+                <div id="3.1">
+                  <h3>3.1 User Interfaces</h3>
+                  <p>The user interface for the software shall be compatible to any browser such as Internet Explorer, Mozilla, or Netscape Navigator by which the user can access to the system. It can also access by Android Device through Android App.
+                    The user interface shall be implemented using any tool or software package like python, Django, Java, or kotlin, Android Studio.</p>
+                  <br> <hr>
+                </div>
+
+                <div id="3.2">
+                  <h3>3.2 Hardware Interfaces</h3>
+                  <p>Since the application must run over the internet, all the hardware shall require to connect internet will be hardware interface for the system. As for e.g. Modem, WAN – LAN, Ethernet Cross-Cable.</p>
+                  <br> <hr>
+                </div>
+
+                <div id="3.3">
+                  <h3>3.3 Software Interfaces</h3>
+                  <ol type="1">
+                    <li>The system should have a dashboard for private and publicfolders, uploaded documents and notifications.</li>
+                    <li>The system should have a public repository where users canonly view the uploaded/created record in assigned public folder.</li>
+                    <li>The system should have a private repository where onlypermitted users and groups are allowed to view and edit a record.</li>
+                    <li>The system should have lock feature tor folder/files.</li>
+                    <li>The system should have a group management to create ncw groups with specific roles per folder.</li>
+                    <li>The system should be capable to use Google Login or Active Directory as login authentication.</li>
+                    <li>The system should be capable to search data such as index, file name, date, author name, uploader name,</li>
+                    <li>The system should have a filtering in search result to easily track the documents.</li>
+                    <li>The system should be capable to count all the uploaded records by folder or user.</li>
+                    <li>The system should be capable to count all the pages in every record uploaded.</li>
+
+                  </ol>
+
+                  <br> <hr>
+                </div>
+
+                <div id="3.4">
+                  <h3>3.4 Communications Interfaces</h3>
+                  <p>This project supports all types of web browsers and android devices and the database is same. The system shall use the HTTP protocol for communication over the internet and for the intranet communication will be through TCP/IP protocol suite</p>
+                  <br> <hr>
+                </div>
+
+                <br><br>
+
+              <div><h1>4. System Features</h1></div>
+              <div id="4.1">
+                <h3>4.1 Description and Priority</h3>
+                <p>The  system should  be stored into storage defined by the Department of finance using a simple document system capable search and retrieval for attaching the same.The project is   high priority because it is very difficult to find the file  in manually. This will make the work easy and time saving for the of department of finance</p>
+                <br> <hr>
+              </div>
+
+              <div id="4.2">
+                <h3>4.2 Stimulus/Response Sequences</h3>
+                <ul>
+                    <li>A dashboard for private and public folders, uploaded documents and notifications.</li>
+                    <li>Users can Upload files in private and public repositories.</li>
+                    <li>Users can search the dedicated file.</li>
+                    <li>Users will get notifications through if there is any update on their  section</hli>
+                  </ul>
+                <br> <hr>
+              </div>
+
+              <div id="4.3">
+                <h3>4.3 Functional Requirements</h3>
+                <p>REQ-1 :The system  should have only one database where various platform user  can access.</p>
+                <p>REQ-2:This is in a distributed system in which.
+                  <ul>
+                    <li>There are two site server sites and client sites where client can see the file and upload </li>
+                    <li>In server site all things are managed by backed engineers</li>
+                    <li>All the data resides at the server sites</li>
+                    <li>All applications execute at the client sites</li>
+                  </ul>
+                </p>
+
+                <br> <hr>
+              </div>
+                <div><h1>5. Other Nonfunctional Requirements</h1></div>
+
+                  <div id="5.1">
+                    <h3>5.1 Performance Requirements</h3>
+                    <p>
+The system will  be interactive and the delays involved will be less.So in every action-response of the system, there are no
+immediate delays. In case of opening windows ,forms of popping error messages and saving the settings or sessions there is delay much
+below 2 seconds, In case of opening databases, sorting questions and evaluation there are no delays and the operation is performed in
+less than 2 seconds for opening ,sorting, computing, posting the files. The performance of the system is dependent on how the
+load is delivered to the system.Due to increase workload , a peak workload will be defined.
+
+
+                    </p>
+                    <br> <hr>
+                  </div>
+
+                  <div id="5.2">
+                    <h3>5.2 Safety Requirements</h3>
+                    <p>
+System failure, login issues, account creation and password reset failure will cause  damage or loss  to the system. A backup system will
+ be there for system failure which will be in archival storage.Information transmission should be securely transmitted to server without
+any changes in information.
+
+                    </p>
+                    <br> <hr>
+                  </div>
+
+                  <div id="5.3">
+                    <h3>5.3 Security Requirements</h3>
+                    <p>
+Security requirements includes authentication, authorization, data protection and so on . Authentication ensures that each entity
+involved in using a the service—the requestor, the provider, and the broker —is what it actually claims to be.
+Authorization determines whether the service provider has granted access to the Web service to the requestor.
+Data protection ensures that the Web servicerequest and response have not been tampered with en route.
+The main security concern is for users account hence proper login mechanism should be used to avoid hacking. The tablet id registration
+ is way to spam check for increasing the security. Hence, security is provided from unwanted use of recognition software.
+
+
+                    </p>
+                    <br> <hr>
+                  </div>
+
+                  <div id="5.4">
+                    <h3>5.4 Software Quality Attributes</h3>
+<ul>
+
+<h4><li>Availability </li></h4>
+<p>The System should be available on the specified date and specified time when many are required to use the product.</p>
+<h4><li>Correctness </li></h4>
+<p>The important aspects to consider in some environments are the professionalism and effectiveness of the website that could be
+ measured through how many different platforms are supported and it supports adaptivity and adaptability for a personalization </p>
+<h4><li>Maintainability </li></h4>
+<p>Admins will maintain the  ease and speed with which the system can be restored to operational status after a failure occurs </p>
+<h4><li>Usability </li></h4>
+<p> The system will be able to satisfy a maximum number of customers needs</p>
+<h4><li>Reliabity </li></h4>
+<p> The system will be aware of bias,look for sites with expertise, check the date ,avoid anonymous authors and check links </p>
+
+
+</ul>
+                    <p>
+
+
+                    </p>
+                    <br> <hr>
+                  </div>
+
+                  <div id="5.5">
+                    <h3>5.5 Business Rules</h3>
+                    <p>
+The system will include privacy policies,cookie consent notices , plagiarism and copyright laws , terms and conditions and disclaimer.
+
+
+                    </p>
+                    <br> <hr>
+                  </div>
+
+                  <br><br>
+
+                <div id="6"><h1>6. Other Requirements</h1></div>
+                <ul>
+                    <li>System is flexible with resolution, to decrease file size the user can scan the documents in lower resolution</li>
+                    <li>System will be allowed to scan the document in various formats (for example A4, A3, letter etc)</li>
+                    <li>System can store the images scanned in various formats (for example PDF, DOC etc)</li>
+                    <li>System will be maintained from time to time.</li>
+                    <li>System will have backup, so that any document lost due to system failure can be recovered.</li>
+                    <li>System will include indexes to the scanned images and the primary goal of indexing is to be able to easily search and extract data from the scanned images. This will also help the office's efficiencies by encouraging staff to browse for information without having to physically comb through boxes of files.</li>
+                  </ul>
+                <br> <hr>
+
+
+                <div id="AP_A"><h1>Appendix A: Glossary</h1></div>
+                <ul>
+                  <li>OCR: Optical Character Recognition converts documents into editable and searchable data.</li>
+                  <li>DMS: Documents management software stores, manage and track electronic documents and electronic images of paper-based information captured through the use of a document scanner.</li>
+                  <li>DBMS: Database management system will store, retrieve, define, and manage data in a database.</li>
+                  <li>API: Application programming Interface is a software intermediary that allows two applications to talk to each other.</li>
+                  <li>SOA: Software Oriented Architecture makes it possible for adding new features and services without having to create them from scratch.</li>
+                  <li>HTML: Hypertext Markup Language for documents designed to be displayed in a web browser.</li>
+                </ul>
+                <br> <hr>
+
+
+                <div id="AP_B"><h1>Appendix B: Analysis Models</h1></div>
+                <h4>List of Actors:</h4>
+                <ol>
+                  <li>Officials (Administrator, Manager, Employee)</li>
+                  <li>User</li>
+                </ol>
+                <h4>Functionalities:</h4>
+                <ol>
+                  <li>Registration for the user, and Login for both user and the officials</li>
+                  <li>Managers can manage any files (delete or update)</li>
+                  <li>Administrators can do all the things that other actors can, but in addition administrators can block or restrict any account</li>
+                  <li>Access of public and private files according to status (user or official)</li>
+                  <li>User can request to access private file</li>
+                  <li>Scanning images and storing them in digitalized formats can be done by any actor</li>
+                </ol>
+
+                  <h4>ER Diagram: </h4>
+                  <a href="https://ibb.co/g6TTR3H"><img src="https://i.ibb.co/BwZZCtd/Database-ER-diagram-crow-s-foot.png" alt="Database-ER-diagram-crow-s-foot" border="0"></a>
+
+                <br> <hr>
+
+
+                <div id="AP_C"><h1>Appendix C: To Be Determined List</h1></div>
+                <ol>
+                  <h3>From 2.2:</h3>
+                  <li>Sample Diagram</li>
+                  <li>Object Class Diagram</li>
+                  <li>Programmign Standards</li>
+                  <li>External Factor Dependencies</li>
+                </ol>
+                <ol>
+                  <h3>From 5.4:</h3>
+                  <li>Interoperability</li>
+                  <li>Reusability</li>
+                  <li>Robustness</li>
+                  <li>Testability</li>
+                </ol>
+                <br> <hr>
+
+
+
+
+
+
+
+
+
+
+            </div>
+            </td>
+            </tr>
+        </table>
+    </body>
+</html>

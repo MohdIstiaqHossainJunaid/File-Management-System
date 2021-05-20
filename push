@@ -1,0 +1,963 @@
+[33mcommit c7acec50018dd4bef33ab54bb36a3b8f4bfc14c1[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: aa4c16d 5d3d7af
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Wed May 19 06:08:47 2021 +0600
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit aa4c16dd1c1a2218db18241b3c55d911179569af[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Wed May 19 06:08:27 2021 +0600
+
+    fixed bug related to login
+
+[33mcommit 5d3d7afc19e0ece65216e15d66654a4556e39e7d[m
+Author: Mohd Istiaq Hossian Junaid <mohd.istiaq@northsouth.edu>
+Date:   Wed May 19 03:21:51 2021 +0600
+
+    update
+
+[33mcommit 0d0aeae175ac37f6bf7794c6fbf27719c326217b[m
+Merge: aa94115 7bf84f1
+Author: Mohd Istiaq Hossian Junaid <mohd.istiaq@northsouth.edu>
+Date:   Tue May 18 21:01:25 2021 +0600
+
+    Merge branch 'master' of https://bitbucket.org/nabeel_mohammed/spring2021.cse327.1.4
+
+[33mcommit aa941157809561fb0d0b6e001d3f8db4e035d20c[m
+Author: Mohd Istiaq Hossian Junaid <mohd.istiaq@northsouth.edu>
+Date:   Tue May 18 21:01:02 2021 +0600
+
+    can push in privarte folder
+
+[33mcommit 7bf84f11cc476a0b6bb6f0b6c167a7644dedb151[m
+Merge: 6b1afcd eba0ea2
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Tue May 18 20:05:13 2021 +0600
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 6b1afcdab1650b6ed8aacd961e11850566b59860[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Tue May 18 20:04:42 2021 +0600
+
+    fixed bugs
+
+[33mcommit eba0ea22b34d67556693226ace1648640cd4dfc3[m
+Author: Mohd Istiaq Hossian Junaid <mohd.istiaq@northsouth.edu>
+Date:   Tue May 18 18:59:02 2021 +0600
+
+    retrivation work fully
+
+[33mcommit 017c95091754d3455137b51bb9bbeab67fa3b2f2[m
+Author: Mohd Istiaq Hossian Junaid <mohd.istiaq@northsouth.edu>
+Date:   Tue May 18 18:10:32 2021 +0600
+
+    qewrqewr
+
+[33mcommit 8bc78d18c0163ecb1594afc01fff271d4feb77f6[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Tue May 18 16:21:47 2021 +0600
+
+    fixed bugs
+
+[33mcommit b96c1d08768c885bae8e226e60570ea9f43e6da9[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Tue May 18 15:08:21 2021 +0600
+
+    fixed a minor bug
+
+[33mcommit 9b07d502e7dce9ff08533d91b9148aaf9909886c[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Tue May 18 15:07:41 2021 +0600
+
+    Admin panel now fully functional, also set barrier on private folder
+
+[33mcommit 8436ee12f0b79ff43f191c57d7115a2eeddf3901[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Mon May 17 09:57:54 2021 +0600
+
+    minor changes to make way for other functions
+
+[33mcommit fc8f6c8e0320780c9c8a80eb0eca26376f08b63b[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Sun May 16 16:52:31 2021 +0000
+
+    UI of update profile made
+
+[33mcommit 48cea40fcacf2bc45563fa251a5534e628e90aa9[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Sun May 16 16:50:08 2021 +0000
+
+    Update Profile facility on progress
+
+[33mcommit 159430189ee12e444d03273f67db571380076f6e[m
+Merge: 20a3658 ccc551b
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Sun May 16 22:02:11 2021 +0600
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 20a3658067bf619e09efe837240db8671cc5d9c6[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Sun May 16 22:01:43 2021 +0600
+
+    Adding search option in public folder
+
+[33mcommit ccc551ba0b2fe15dfc78e276c2415f2a1d528c15[m
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Sun May 16 14:59:54 2021 +0600
+
+[33mcommit 3dbf4b0c1729b9bc9b0fdcdac04a65bd39a7537f[m
+Merge: 97cef58 bf5d62e
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Sun May 16 14:59:02 2021 +0600
+
+    Merge branch 'master' of https://bitbucket.org/nabeel_mohammed/spring2021.cse327.1.4
+
+[33mcommit bf5d62e0e5cdfdf335817c255c1c3c6051fb53bf[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Sun May 16 08:03:44 2021 +0600
+
+    User query and admin notification implemented
+
+[33mcommit 97cef58d27ddd2d8f0edd4cff654d5ffa7a6bfd5[m
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Sun May 16 02:53:21 2021 +0600
+
+    Upload and retrive from private folder
+
+[33mcommit e7b52b86d7e2b20cbdfba473309514e64698c86a[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Sat May 15 07:13:03 2021 +0600
+
+    Introduced a new way of setting admin/user hierarchy. This will help us to develop the admin panel.
+
+[33mcommit b72a1a11c6909fddd103aa1bb0ca0a7cd006dd7c[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Sat May 15 04:43:01 2021 +0600
+
+    Now can also retrieve from private folder
+
+[33mcommit 95dddab295b57c33060628c3a928cc20200451a1[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Sat May 15 04:18:58 2021 +0600
+
+    Now can retrieve files from public folder
+
+[33mcommit 2fbbfc749bf227fe3ebf7d5a88dd7389f8bf0668[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Thu May 13 16:58:57 2021 +0000
+
+    fixed bug where database wasn't storing file name after upload
+
+[33mcommit e4b46bc9f6c8136baf4abfd3b804650b2d02abfa[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Wed May 12 14:02:44 2021 +0000
+
+    now can take picture with camera, choose picture from gallery and can crop picture. The image file is also scanned and digitalized. Scanner now fully implemented.
+
+[33mcommit 3d821345c8e5bc0e82353c366458119c7069a8b1[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Wed May 12 11:56:01 2021 +0600
+
+    Major bug fixes
+
+[33mcommit 45bfb4f8d05b0689ae7f60b42713344e97204f24[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Tue May 11 00:29:11 2021 +0600
+
+    Pdf maker for OCR input now functional
+
+[33mcommit fa03ef93b49a0522b8f29a88aba4d8651dc5b84b[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Mon May 10 23:55:15 2021 +0600
+
+    Made pdf maker for OCR input
+
+[33mcommit ca9194062dfd2c48e7998b2b182a1e4a09083db9[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Mon May 10 23:55:04 2021 +0600
+
+    Made pdf maker for OCR input
+
+[33mcommit 85e76d4d1b916c6e1439102f463d6ca47a969d5d[m
+Merge: 64461c2 014fe89
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Mon May 10 20:33:56 2021 +0600
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 64461c26a509caae5db373136ef44efcc08bc8b1[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Mon May 10 20:33:33 2021 +0600
+
+    Bug fixes and started working on OCR
+
+[33mcommit 014fe89d42e041bf4235520c779c7897214cff43[m
+Merge: 99548ca 1f240b9
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Mon May 10 17:31:45 2021 +0600
+
+    Merge branch 'master' of https://bitbucket.org/nabeel_mohammed/spring2021.cse327.1.4
+
+[33mcommit 99548caed5d9f1956788ab27a02b6edcc47724b3[m
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Mon May 10 17:31:19 2021 +0600
+
+    fixed retrivation
+
+[33mcommit 1f240b9857d180d80212bef21b1ab3c58d9b072a[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Sun May 9 23:53:30 2021 +0600
+
+    Admin Panel updated, still work to do regarding it
+
+[33mcommit 1d78031095ffe25bcd64d8d2ed76df1286002867[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Sat May 8 16:48:53 2021 +0000
+
+    dashboard xml frontend updated
+
+[33mcommit 4aa6fb4801e9411e04ce58cbc09d59f3321d408b[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Fri May 7 17:44:07 2021 +0000
+
+    profile xml frontend updated
+
+[33mcommit 679e5b97529c23eaa0afc3a0bf2b619f6804e34f[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Fri May 7 17:42:27 2021 +0000
+
+    upload files xml frontend updated
+
+[33mcommit 9be3f76385bd6bda0dee539111a557a8d4e714d2[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Thu May 6 17:06:44 2021 +0000
+
+    admin login xml frontend updated
+
+[33mcommit 5c4df96bd3c4003020648fe054673cafcecf4a99[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Thu May 6 17:05:25 2021 +0000
+
+    register xml frontend updated
+
+[33mcommit 10a863922b0bb3f307b74e176088727f9d04775e[m
+Merge: 97872e3 9393d9b
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Thu May 6 23:04:00 2021 +0600
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 9393d9be4035f0723fbc46a54284236b01f875db[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Thu May 6 17:03:21 2021 +0000
+
+    Login XML frontend updated
+
+[33mcommit 97872e358ce72177563cd1ccd33d865b6c06c3dd[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Thu May 6 22:53:21 2021 +0600
+
+    Preparing recyclerview for admin panel and retrieving files from storage
+
+[33mcommit a3bedb51d134f102aa8cc47a8e734c2e3223d4e6[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Wed May 5 15:05:58 2021 +0000
+
+    Functional Profile
+
+[33mcommit 5951a89bd8a0bbb9c0992e913c01fe8892369bd2[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Wed May 5 15:04:03 2021 +0000
+
+    Profile UI Updated
+
+[33mcommit 47ce96e4aa5a0098154fbb68fb266e4e7488a653[m
+Merge: 395b92f e280d1e
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Wed May 5 21:00:30 2021 +0600
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 395b92f96d3e4f7f6ced8bac3452a67c8cbaa4da[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Wed May 5 20:59:42 2021 +0600
+
+    now can take file information from storage
+
+[33mcommit e280d1e3fe224e1c26df81749433956e9a8aa79c[m
+Merge: 68d4347 2487daa
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Tue May 4 09:27:16 2021 +0600
+
+    Merge branch 'master' of https://bitbucket.org/nabeel_mohammed/spring2021.cse327.1.4
+
+[33mcommit 68d434777c5f7055059b45ed837a9c7f037103ae[m
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Tue May 4 09:26:56 2021 +0600
+
+    sing up  fixed and ui update
+
+[33mcommit 2487daa3921cb7304c178fad0c438a9718efa9fe[m
+Merge: 54a256c 8277955
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Tue May 4 06:12:28 2021 +0600
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       app/src/main/java/com/example/cse327projet/AdminDashboard.java
+    #       app/src/main/res/layout/activity_admin_dashboard.xml
+    #       app/src/main/res/layout/activity_dashboard.xml
+
+[33mcommit 54a256c73cfd31de3a9c24da766b313aae5a9e3c[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Tue May 4 06:11:30 2021 +0600
+
+    Upload option now uploads file with it's initial name instead of random
+
+[33mcommit 827795554fbf272a3454b5d346f167862911667e[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Mon May 3 17:40:55 2021 +0000
+
+    dashboard UI updated
+
+[33mcommit c811cd0be608fd64ad6fd21c7465be39af598b77[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Mon May 3 17:39:05 2021 +0000
+
+    Made Admin Dashboard functional
+
+[33mcommit 4f5f7b066e701593c00f062670c22c9e6c2242a3[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Mon May 3 17:37:02 2021 +0000
+
+    admin dashboard UI Added
+
+[33mcommit 0038a84e6b3b614486514d8e7bf3938e97de099f[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Mon May 3 21:28:51 2021 +0600
+
+    Users now differentiated into user and admin. Admin login now works.
+
+[33mcommit aa6b61639cfc191c60747658981979fba8ba944d[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Mon May 3 10:03:42 2021 +0600
+
+    Registration updated, now can upload information to firebase. Also updated gradle which was causing problems.
+
+[33mcommit fab98df9667129eccff2817a39696489c93b2802[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Mon May 3 06:27:24 2021 +0600
+
+    Retrieve password facility added
+
+[33mcommit f43f31f07eb369bb2447f7f6570b7a6a8c80bf00[m
+Merge: dab7ac4 717a02c
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Sun May 2 22:41:48 2021 +0600
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       app/src/main/res/layout/activity_dashboard.xml
+
+[33mcommit dab7ac491f6819b9e1116b3a60cb41027cd9d48d[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Sun May 2 22:40:34 2021 +0600
+
+    Added option to upload private files,initiated administration related dues
+
+[33mcommit 717a02c69c914caa168486ce3d4cd6b4f01d3c58[m
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Sun May 2 10:06:38 2021 +0600
+
+    updated
+
+[33mcommit ba1cfc5f375e74ab818edca541ea5e23593be5df[m
+Merge: 68d036f a69aaeb
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Sun May 2 08:09:43 2021 +0600
+
+    Merge branch 'master' of https://bitbucket.org/nabeel_mohammed/spring2021.cse327.1.4
+
+[33mcommit 68d036f52c5fa6a4b7bbd9767d68b74ce3f87989[m
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Sun May 2 08:09:18 2021 +0600
+
+    updated ui and fixed lots of bugs
+
+[33mcommit a69aaebdbd15889527422f4abe97c26282fcb841[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Sat May 1 17:33:16 2021 +0000
+
+    Dashboard connected to the system
+
+[33mcommit 5f6d776451584e11e93c368b4922a66e871f7c15[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Sat May 1 17:29:17 2021 +0000
+
+    Dashboard UI updated
+
+[33mcommit cdddc6990439ea8c3d77a29b4a65b03741537699[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Sat May 1 21:30:44 2021 +0600
+
+    Added upload feature(still experimental with minor bugs)
+
+[33mcommit 7b941fe5aa35de92d8fac33d0c7f4777b0b76764[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Sat May 1 14:57:39 2021 +0600
+
+    Few errors fixed
+
+[33mcommit 586d333efa4803f2a0460b16a8d2feb6a5135290[m
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Sat May 1 13:18:57 2021 +0600
+
+    fix some errror and add userdashboard
+
+[33mcommit 7db0b21fb7e334fc080da10d6683ee987db1e5d2[m
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Sat May 1 06:06:38 2021 +0600
+
+    full AdminDash Board Complete
+
+[33mcommit 2c8db19a807925de1d68f8296672fc5f490c7491[m
+Merge: 24ecff9 d531b8f
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Sat May 1 06:05:34 2021 +0600
+
+    Merge branch 'master' of https://bitbucket.org/nabeel_mohammed/spring2021.cse327.1.4
+
+[33mcommit d531b8ff00f004536d8b012078cf1a77f8590afd[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Fri Apr 30 17:53:14 2021 +0000
+
+    User Dashboard Added
+
+[33mcommit 0039cd26a5013405c6b49baae5cb6b9251971b56[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Fri Apr 30 23:06:40 2021 +0600
+
+    Admin Login added and connecting all to firebase
+
+[33mcommit 36530481875004efe589d1bb3bf723bc4b9d5122[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Fri Apr 30 23:06:09 2021 +0600
+
+    Admin Login added and connecting all to firebase
+
+[33mcommit 966738d970d8458b16e9d3954537d19342b82334[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Fri Apr 30 22:54:59 2021 +0600
+
+    Admin Login added and connecting all to firebase
+
+[33mcommit 3ac2384bc5737f85c56fa8845b483d13f2ecea3f[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Fri Apr 30 22:49:40 2021 +0600
+
+    Login connected to firebase
+
+[33mcommit 73d167f9ac475752ca0abe4b00865108f18cddff[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Fri Apr 30 22:46:54 2021 +0600
+
+    -
+
+[33mcommit 24ecff94b53753768c3117e79461ff8a23b2f839[m
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Fri Apr 30 08:00:55 2021 +0600
+
+[33mcommit 6c056f2e6d368b459bd3a4c01ece1361212d02b0[m
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Fri Apr 30 07:58:32 2021 +0600
+
+    signIn
+
+[33mcommit 5ea63239f7bf9e1a3c5a140ef285e8e1974c448f[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Thu Apr 29 22:11:02 2021 +0600
+
+    Log in updated
+
+[33mcommit 34680ec7c7f5eb0e6cb7f0bdcfa8338feb7e31de[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Thu Apr 29 22:09:11 2021 +0600
+
+    Log in and registration error fixed
+
+[33mcommit 455d9c8bfed488fb3bf7cf25746ae0045d520bba[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Wed Apr 28 23:53:22 2021 +0600
+
+    Log in and registration error fixed
+
+[33mcommit 3f3de46956a59345927f8ae649ca71c43e0bd628[m
+Author: Ahmed Omar <ahmed.adnan01@northsouth.edu>
+Date:   Wed Apr 28 23:48:00 2021 +0600
+
+    Log in and registration first update
+
+[33mcommit 61f249a257026a16051994f6032523af14948c07[m
+Author: Mohd. Istiaq Hossain Junaid 182157764 <mohd.istiaq@northsouth.edu>
+Date:   Wed Apr 28 12:14:17 2021 +0600
+
+    dashboardhalf
+
+[33mcommit 6117204ebb0194f08b57db6b5ee74242564d3a00[m[33m ([m[1;31morigin/jun[m[33m, [m[1;32mjun[m[33m)[m
+Author: Mohd. Istiaq Hossain Junaid 1821577642 <mohd.istiaq@northsouth.edu>
+Date:   Tue Apr 27 18:10:30 2021 +0600
+
+    fileUlpoadOption Added
+
+[33mcommit 70f0d9f0f451758b13ebd8702e1773b8adc6113b[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Mon Apr 19 15:05:23 2021 +0600
+
+    start webApp
+
+[33mcommit c1d55f973fafe4a309baabea5d2e4655598242da[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Mon Apr 19 15:00:42 2021 +0600
+
+    start webApp
+
+[33mcommit 4662e7ca0b9620218ff748af631d7aaf1645b9fa[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Apr 15 23:45:02 2021 +0600
+
+    complete description
+
+[33mcommit e14111e0ca229a67c4ec037d6764bc9ca040df23[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Apr 15 23:33:49 2021 +0600
+
+    half description complete
+
+[33mcommit 1a9846141f5b975a9a5e0a02ead53664667785c8[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Apr 15 23:23:03 2021 +0600
+
+    er diagram updated
+
+[33mcommit aca89fcfeb7fdce5660c74d0cf6441074cd2b3a6[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Thu Apr 15 17:18:59 2021 +0000
+
+    Section 5.1 and 5.2 updated
+
+[33mcommit d26def9a87ac6f860f163f68dd846b7c499df299[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Thu Apr 15 17:11:01 2021 +0000
+
+    SDS.html edited online with Bitbucket
+
+[33mcommit 7105d4e0b814d3c2c0ad733014b6309b481b6c6d[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Thu Apr 15 16:16:04 2021 +0000
+
+    SDS.html edited online with Bitbucket
+
+[33mcommit 15915c0018e33c1939a9d3e3ca107fece363a75a[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Thu Apr 15 11:04:27 2021 +0000
+
+    SDS.html edited online with Bitbucket
+
+[33mcommit 345eb367693c2d235cdd94c98d6aeea703270a43[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Tue Apr 13 18:02:45 2021 +0000
+
+    ClassDiagram updated
+
+[33mcommit 1fa334a05ca0caa8fbfd3cd49616edffdf320a43[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Fri Apr 9 19:42:37 2021 +0600
+
+    Er Diagram
+
+[33mcommit ea6761a6997c8e66ceed7d2aa6e517f8ecba98e5[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Fri Apr 9 13:35:16 2021 +0000
+
+    Updated 3.2 and 4
+
+[33mcommit e8d15fdfaf7002e18383927e79f478879c907081[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Fri Apr 9 08:51:40 2021 +0000
+
+    ClassDiagram Added in Section 5
+
+[33mcommit 84be167ecaaf8b0e6723aac160e135a6180b6534[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Fri Apr 9 06:22:34 2021 +0000
+
+    Added section 8
+
+[33mcommit 2c4ed4c83a58a0aa7763a69c02560d9e701e9093[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Fri Apr 9 04:51:19 2021 +0000
+
+    Updated 3.2 and some minor fixes
+
+[33mcommit 99512133a41d847c1be83018b21506573705f246[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Thu Apr 8 18:03:52 2021 +0000
+
+    error fixed
+
+[33mcommit b2cad1105d6c89fd01237858e04acb89f106fa69[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Thu Apr 8 17:59:44 2021 +0000
+
+    added 5.2
+
+[33mcommit 878fd1ef5400b0e7d8f6415c8a390623dd82a108[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Thu Apr 8 17:14:33 2021 +0000
+
+    Updated 3.2
+
+[33mcommit b323e6cc077182bfb76682fcc3c4abb089bc6454[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Thu Apr 8 15:56:54 2021 +0000
+
+    Updated 3.1
+
+[33mcommit 384ad5ed7f5ae8a1cb6eaa143c499f58a1b41b31[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Tue Apr 6 18:20:56 2021 +0000
+
+    SDS.html edited online with Bitbucket
+
+[33mcommit 82f0108c16cf9cecc55755b007bb7462277b722b[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Tue Apr 6 17:37:12 2021 +0000
+
+    SDS.html edited online with Bitbucket
+
+[33mcommit a2d44efd235d589f0e1eba754a77320045b9b682[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Sat Apr 3 06:51:54 2021 +0000
+
+    SDS format with placeholders
+
+[33mcommit 957257e99f4f729e7af9cd36ea040765f2c32e14[m
+Merge: 3161e45 07300eb
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 23:34:29 2021 +0600
+
+    Merge branches 'master' and 'master' of https://bitbucket.org/nabeel_mohammed/spring2021.cse327.1.4
+
+[33mcommit 07300ebd6928e35860c6efbd2c55cc29dfc76a8c[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Thu Mar 18 17:07:50 2021 +0000
+
+    Added Appendix C
+
+[33mcommit 9d7a0c2340d7d205ed912b0e50d8a428bff585ec[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Thu Mar 18 17:04:06 2021 +0000
+
+    SRS.html edited online with Bitbucket
+
+[33mcommit 87adee8e1b067d9550ea71139fcbdebd589bfd0d[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Thu Mar 18 17:00:57 2021 +0000
+
+    edited  1.2
+
+[33mcommit ade2d0b93560c1a7c62e9b9a965ed906de5831c9[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Thu Mar 18 16:49:13 2021 +0000
+
+    ER diagram added
+
+[33mcommit 3161e459ff7b49230bcbda4f0c4906a764244704[m
+Merge: 26e069d ed312da
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 22:32:05 2021 +0600
+
+    Merge branch 'master' of https://bitbucket.org/nabeel_mohammed/spring2021.cse327.1.4
+
+[33mcommit ed312da0aee993d9a386ea5b76eb234316449501[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Thu Mar 18 16:25:40 2021 +0000
+
+    SRS.html edited online with Bitbucket
+
+[33mcommit 26e069d85a3aa1fb2afc02d7d0a8c7ca02188ffe[m
+Merge: 444dc50 2b3868e
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 22:21:41 2021 +0600
+
+    Merge branch 'master' of https://bitbucket.org/nabeel_mohammed/spring2021.cse327.1.4
+
+[33mcommit 444dc50d61d2926463ae426b89dcdebd2dd2be36[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 22:21:31 2021 +0600
+
+    typing mistake
+
+[33mcommit 2b3868e8da98add97e064589e3bbeb91e7652df3[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Thu Mar 18 16:11:15 2021 +0000
+
+    SRS.html edited online with Bitbucket
+
+[33mcommit 2480d8e1632bb3df19ef837d12659e1978627187[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Thu Mar 18 16:05:20 2021 +0000
+
+    SRS.html edited online with Bitbucket
+
+[33mcommit adc72f01d4fb823477ce47b6d5d8ee14d8bafdff[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Thu Mar 18 16:01:55 2021 +0000
+
+    SRS.html edited online with Bitbucket
+
+[33mcommit fd22984770f014a0c6d021570bb44f1cbac197b1[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Thu Mar 18 15:38:59 2021 +0000
+
+    Added Appendix B
+
+[33mcommit ec1b0fd9ecc9e090a3898da83ae3948766de0eb2[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Thu Mar 18 15:19:42 2021 +0000
+
+    SRS.html edited online with Bitbucket
+
+[33mcommit ec54c71bc77d0c54cb8608397faaf5f7214c6499[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Thu Mar 18 14:58:37 2021 +0000
+
+    Added Appendix A
+
+[33mcommit 59178c595c6f057723fecfd8662f31da65f988e8[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Thu Mar 18 14:30:12 2021 +0000
+
+    added 6
+
+[33mcommit d25b0bdb7f9fe3bd93f11ac1b5fbbe06026b556e[m
+Author: Mohd. Istiaq Hossain Junaid 1821577642 <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 11:28:39 2021 +0000
+
+    .vscode/launch.json edited online with Bitbucket
+
+[33mcommit 7307090976be4014fe89d26aa297502345d3e12b[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 17:21:58 2021 +0600
+
+    format update
+
+[33mcommit 1228b0a1453f5738cf7f6300ef3ddbdb2aee94cf[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 16:25:28 2021 +0600
+
+    reference link
+
+[33mcommit e58838de2ffaaa02a773e7701bcf03e0330d4add[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 16:07:02 2021 +0600
+
+    4.1.3
+
+[33mcommit 8ab147f14adce140ab5b10abf60014b09ee03a26[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Thu Mar 18 09:58:03 2021 +0000
+
+    Added 1.2 and 1.5
+
+[33mcommit 01604d8d11be106a1c913201881d8914ac12559a[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 15:44:17 2021 +0600
+
+    4.1.2
+
+[33mcommit 338a3f84fcefdb7c5a4e6034ecdb760b184bfe28[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 15:34:24 2021 +0600
+
+    4.1.1
+
+[33mcommit 1e80b6904444a833b86c922c15cb48ca281e883b[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 14:53:41 2021 +0600
+
+    simple update
+
+[33mcommit 69e1865197f2c3886fc200a67e549c0248cccf3c[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Thu Mar 18 07:04:19 2021 +0000
+
+    Improved interface by hiding cover and table of contents on screen but displaying in print
+
+[33mcommit cf7a3ec6bfd66d4b8e96f421fedf0dda8c1877cf[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Thu Mar 18 06:07:16 2021 +0000
+
+    Placeholders added for 4, 5, 6 and Appendix. Also made some minor adjustments.
+
+[33mcommit f5005f3acd07f10faccbdb233e54fe312226e8ba[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 07:14:10 2021 +0600
+
+    Table of Contents completed
+
+[33mcommit f3aec2a9d40270735cb6eb1309da2bf902cee8ea[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 06:31:28 2021 +0600
+
+    some format has changed
+
+[33mcommit 6dfe848329a48a3a68f9d33aefcbb92c71043615[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Thu Mar 18 05:24:06 2021 +0600
+
+    External Interface Requirements(3.1,3.2,3.3) Completed
+
+[33mcommit b4a535b37c58b9a5754ff3a51757ff169a7f4998[m
+Author: Mohd. Istiaq Hossain Junaid 1821577642 <mohd.istiaq@northsouth.edu>
+Date:   Wed Mar 17 21:28:07 2021 +0000
+
+    No need
+
+[33mcommit 6848329eeabbc7322bb29954b139a6cb6899ba6a[m
+Author: Mohd. Istiaq Hossain Junaid 1821577642 <mohd.istiaq@northsouth.edu>
+Date:   Wed Mar 17 13:32:35 2021 +0000
+
+    SRS.html edited online with Bitbucket
+
+[33mcommit 08976ca6dd90604ae33d512c34c05f527f65a081[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Wed Mar 17 19:30:45 2021 +0600
+
+    final
+
+[33mcommit f5501688e2976fe219ca35db139b6083a19f897a[m
+Author: Mohd. Istiaq Hossain Junaid 1821577642 <mohd.istiaq@northsouth.edu>
+Date:   Wed Mar 17 13:23:53 2021 +0000
+
+    final
+
+[33mcommit b62b0f3f28130b8ed529678cc87abc47d2ca840a[m
+Merge: fd48208 8522e60
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Wed Mar 17 18:55:15 2021 +0600
+
+    Merge branch 'master' of https://bitbucket.org/nabeel_mohammed/spring2021.cse327.1.4
+
+[33mcommit fd482088994ec863c48bd1f73d85787e0e86db0e[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Wed Mar 17 18:37:11 2021 +0600
+
+    edit on this
+
+[33mcommit 8522e601c0167e7642c873c8c3db40691423c605[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Wed Mar 17 12:20:06 2021 +0000
+
+    SRS.html edited online with Bitbucket
+
+[33mcommit 81c1c1b21ce10f14a9e4e31b632733151c77bc7e[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Wed Mar 17 17:58:57 2021 +0600
+
+    ADD front page
+
+[33mcommit c0bdd1e2507237b4e61b410b9060bf9a304b7a31[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Tue Mar 16 17:47:54 2021 +0000
+
+    SRS.html edited online with Bitbucket
+
+[33mcommit fcb1f378f5480327df85ea2b299051a974504f7c[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Tue Mar 16 17:22:22 2021 +0000
+
+    SRS.html edited online with Bitbucket
+
+[33mcommit db462894024c9b3a98484c6cf99e770f90d46b06[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Tue Mar 16 17:20:22 2021 +0000
+
+    SRS.html edited online with Bitbucket
+
+[33mcommit 88fa208623dd667760e81d18a70cadb7a4abcdf7[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Tue Mar 16 14:52:35 2021 +0000
+
+    Updated content 1.1, 1.3, 1.4.
+
+[33mcommit 1bd21da2a8a019ac00c1f674de17568718e689d5[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Tue Mar 16 10:27:35 2021 +0000
+
+    Placeholder added till 3. External Interface Requirements
+
+[33mcommit 671f8c6df3657f6eb80928d8f28c1642d0eb331c[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Tue Mar 16 10:14:07 2021 +0000
+
+    scroll added to sidebar, improved UI, making the page print ready and also added some content placeholders
+
+[33mcommit af7d60ec91a857d2761bf720f686f5b5936a8c6b[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Mon Mar 15 10:20:53 2021 +0000
+
+    Added a print button to the SRS
+
+[33mcommit 03f9d5d6b940f7ef89a8e2a607941eccc02ab9db[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Mon Mar 15 07:07:17 2021 +0000
+
+    Redesigned and some minor adjustments, still need to add contents
+
+[33mcommit f63413ec170a0388b2e19a77b224218f6c635110[m
+Author: Hosnara Happy <hosnara.happy@northsouth.edu>
+Date:   Sun Mar 14 14:09:44 2021 +0000
+
+    SRS with headings and subheadings, just need to add the contents
+
+[33mcommit 3e9054702d1be64375eb42a59c16ab17453c4e36[m
+Author: Ahmed Omar Salim Adnan <ahmed.adnan01@northsouth.edu>
+Date:   Sat Mar 13 17:40:32 2021 +0000
+
+    Format of our SRS, need to add headings, subheadings and contents in the coming days
+
+[33mcommit 838817f563b98e135e84f02fe546e240273c444b[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Tue Mar 9 17:25:51 2021 +0000
+
+    srs.html edited online with Bitbucket
+
+[33mcommit 793598b71a2d806f623ab2ad6ddbdd73d7ee9734[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Mon Mar 8 23:38:52 2021 +0600
+
+    deleting this because this in plain text format
+
+[33mcommit 0f8fe6501b0dab113f5f4dd017a326e02419fcc3[m
+Author: MohdIstiaqHossainJunaid <mohd.istiaq@northsouth.edu>
+Date:   Mon Mar 8 23:36:55 2021 +0600
+
+    file type should in .HTML
+
+[33mcommit f05b3b2b81117270563f3cf897063595b651e2ee[m
+Author: Tasfia Samin <tasfia.samin@northsouth.edu>
+Date:   Mon Mar 8 16:44:30 2021 +0000
+
+    srs created online with Bitbucket
+
+[33mcommit 3db2230c14ed0aaeb44335d6f08d80be955bb212[m
+Author: Nabeel Mohammed <nabeel.mohammed@northsouth.edu>
+Date:   Mon Mar 1 15:53:18 2021 +0000
+
+    Initial commit

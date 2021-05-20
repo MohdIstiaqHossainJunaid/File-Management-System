@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SDS of Team Codejavu</title>
+
+        <style>
+            body {
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                                Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+                                Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+                                "Segoe UI Symbol";
+                    padding: 0;
+                    margin: 0;
+                }
+
+                #Content-div{
+                  position: absolute;
+                  left: 30%;
+                  right: 10%;
+                }
+
+                #layout-menu-div{
+                  position: fixed;
+                  overflow-y: scroll;
+                  background: #40E0D0;
+                  border: 1px solid #dddddd;
+                  padding-top: 0.5em;
+                  padding-left: 8px;
+                  padding-right: 8px;
+                  font-size: 1.0em;
+                  height: 100%; width: auto;
+                  white-space: nowrap;
+                  text-align: left;
+                }
+
+                #layout-menu {
+
+                }
+
+                #layout-menu a {
+                    padding: 0px;
+                    line-height: 2;
+                }
+
+                a:hover, a:hover > tt{
+                    border-bottom: 1.25px #1a1e24 solid;
+                    color: #ff0000;
+                }
+
+                #layout-menu a.current:link, #layout-menu a.current:visited {
+                    color: #586069;
+                    font-weight: 600;
+                }
+
+                #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
+                    color: #00008b;
+                    text-decoration: none;
+                }
+
+                #layout-menu a:hover {
+                    color: #41042e;
+                    text-decoration: none;
+                }
+
+                div.menu-category {
+                    margin-top: 14px;
+                    padding-top: 8px;
+                    padding-bottom: 0.1em;
+                    padding-left: 5px;
+                    padding-right: 25px;
+                    font-size: 18px;
+                    font-family: Garamond;
+                    font-style: bold;
+                    line-height: 2;
+                    border-top: 0.8px solid #FFFFFF;
+                }
+
+                div.menu-item {
+                    font-size: 14px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+
+                div.menu-item2 {
+                    font-size: 12px;
+                    padding-left: 40px;
+                    padding-right: 25px;
+                }
+
+                table {
+                    border-collapse: collapse;
+                }
+
+                td {
+                    padding-left: 0.5em;
+                    padding-right: 0.5em;
+                    text-align: left;
+
+                    border: 1px solid #d1d5da;
+                    line-height: 2;
+                }
+
+                button {
+                  position: fixed;
+                  right: 0;
+                  bottom: 0;
+                  margin: 10px;
+                  cursor: pointer;
+                  background-color: #40E0D0;
+                  border: 2px solid #000000;
+                  color: #FFFFFF;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                }
+                @media print {
+                  #printPageButton, #layout-menu-div{
+                  display: none;
+
+                  }
+
+                }
+        </style>
+
+        <style media="screen">
+              .hide-on-screen {display:none;}
+              .yesPrint, .noPrint {display:block;}
+
+              @media print {
+              .noPrint {display:none;}
+              .hide-on-screen {display:block;}
+              }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div><button id = "printPageButton" target="blank" onclick="window.print();">Print</button></div>
+
+        <table id="tlayout">
+            <tr valign="top">
+              <td id="layout-menu">
+
+                <div id="layout-menu-div"><div class="menu-category"><a href=#1>1. Introduction</a></div>
+
+                <div class="menu-category"><a href=#2>2. Document Conventions</a></div>
+
+
+                <div class="menu-category">3. Description of Design Components</div>
+
+                    <div class="menu-item"><a href=#3.1>3.1 Server-side</a></div>
+                    <div class="menu-item"><a href=#3.2>3.2 Client-side</a></div>
+
+                <div class="menu-category"><a href=#4>4. High-level Component Design</a></div>
+
+
+                <div class="menu-category">5. Class Diagram</div>
+
+                    <div class="menu-item"><a href=#5.1>5.1 Detailed Class Diagram</a></div>
+                    <div class="menu-item"><a href=#5.2>5.2 Detailed Class Description</a></div>
+
+                <div class="menu-category"><a href=#6>6. Sequence Diagrams</a></div>
+
+
+                <div class="menu-category">7. Database Design</div>
+
+                    <div class="menu-item"><a href=#7.1>7.1 ER Diagram</a></div>
+                    <div class="menu-item"><a href=#7.2>7.2 Tables</a></div>
+
+                <div class="menu-category"><a href=#8>8. Implementation Plan</a></div>
+
+              </div>
+            </td>
+
+            <td id="layout-content">
+
+
+            <div id="Content-div">
+              <div class="hide-on-screen">
+            <head >
+                <hr size="10" width=" 100%" color="black">
+
+                <tittle> <h1 align="right">  Software Design
+                Specification </br>
+
+
+                </tittle>
+                </head>
+
+                <body>
+
+                 <h2 align="right"> for </h4>
+                 <h2 align="right" >DOCUMENT DlGITIZATION SERVICE FOR Plan lnternational Bangladesh  </h2>>
+                 <h3 align="right" > Version 1.0 approved </h1>
+                 <h3 align="right"> Prepared by : </br> Tasfia Samin </br> Hosnara Happy </br> Mohd. Istiaq hossain Junaid </br> Ahmed Omar Salim Adnan </h1>
+                 <h3 align="right" >  North South University </h1>
+                 <h3 align="right" >   19-03-2020 </h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+
+                <div class="hide-on-screen">
+                <h3>Table of contents</h3>
+                <table width="450" border="2" cellpadding="1">
+                  <tbody>
+                  <tr>
+                  <td><strong>1. Introduction</strong><br>
+                  <strong>2. Document Conventions</strong><br>
+                  <strong>3. Description of Design Components</strong><br>
+                  3.1 Server-side<br>
+                  3.2 Client-side<br>
+                  <strong>4. High-level Component Design</strong><br>
+                  <strong>5. Class Diagram</strong><br>
+                  5.1 Detailed Class Diagram<br>
+                  5.2 Detailed Class Description<br>
+                  <strong>6. Sequence Diagrams</strong><br>
+                  <strong>7. Database Design</strong><br>
+                  7.1 ER Diagram<br>
+                  7.2 Tables<br>
+                  <strong>8. Implementation Plan</strong><br>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <h2>Revision History</h2>
+                  <table style="width:100% " border="2">
+                    <tr>
+                      <th>Name</th>
+                      <th>Date</th>
+                      <th>Reason For Changes</th>
+                      <th>Version</th>
+                    </tr>
+                    <tr>
+                      <td><br></td>
+                      <td><br></td>
+                      <td><br></td>
+                      <td><br></td>
+                    </tr>
+                    <tr>
+                      <td><br></td>
+                      <td><br></td>
+                      <td><br></td>
+                      <td><br></td>
+                    </tr>
+                  </table>
+
+                  <br><br><br>
+                </div>
+<div id="1">
+
+<h1>1.Introduction</h1>
+
+<p>The aim of the project is to build a document management software which digitizes existing documents/files from the Department of Finance.
+The converted digital format will  be  stored into storage defined by the Department of finance using a simple document system capable
+search and retrieval for attaching the same.It will be accessible via web browser as well as phone application. <br>
+The system will be user friendly and easily accessible, store, manage, edit, send and delete documents.The system will allow users to
+create accounts, upload unlimited files and search for required files.It is based on web-application and Relational Database. Database
+server will be there for handling huge data form different city branches of the organization. As everything is digitized so it will be
+less time consuming and efficient than typical existing manual system. We vision to provide best possible software system with
+low pricing and easy-to-use application.
+
+                   </p>
+
+
+
+
+              </div>
+
+
+
+
+
+
+                <br><br>
+
+              <div id="2">
+              <h1>2. Document Conventions </h1>
+
+
+             <table style="width:100% " border="2">
+                    <tr>
+                      <th>Document Conventions</th>
+                      <th>Use</th>
+                    </tr>
+                    <tr>
+                      <td>OCR</td>
+                      <td>Scanning paper documents</td>
+                    </tr>
+                    <tr>
+                      <td>DBMS</td>
+                      <td>Managing, storing, retrieving data</td>
+                    </tr>
+                    <tr>
+                      <td>API</td>
+                      <td>User interface allows applicants to interact</td>
+                    </tr>
+                    <tr>
+                      <td>ER</td>
+                      <td>User Hierarchy must have relation to other users and can take control of their actions</td>
+                    </tr>
+                    <tr>
+                      <td>SOA</td>
+                      <td>communicate across different platforms and languages</td>
+                    </tr>
+                    <tr>
+                      <td>Dashboard</td>
+                      <td>Dashboard for private and public
+folders, uploaded documents and real-time notification Viewer
+</td>
+                    </tr>
+                    <tr>
+                      <td>CVS Format</td>
+                      <td>Upload and automatically link the attributes in designated file names without any limit</td>
+                    </tr>
+                    <tr>
+                      <td>Django</td>
+                      <td>Framework</td>
+                    </tr>
+                    <tr>
+                      <td>DMS</td>
+                      <td>Track, manage, store document and reduce paper</td>
+                    </tr>
+                  </table>
+                  <br> <hr>
+
+
+                  </div>
+
+
+                <br><br>
+
+              <div><h1>3. Description of Design Components</h1></div>
+
+                <div id="3.1">
+                  <h3>3.1 Server-side</h3>
+                  <p>
+
+                  The database in our server-side is made using firebase, and the backend server is Django. The server is a MVC type architecture where the Controller handles any incoming request from the REST API Framework, receives information from the models and return response to be displayed through a view.
+
+                  </p>
+                  <p>
+
+                  In the server-side, the IT department will have the following responsibilities:
+
+                <ol>
+                  <li>Backing up the files: If a user uploads a file, it will be automatically stored inside a folder in the server-side. There will be two folders for this, one labelled public and the other private. The IT department will have to back up these folders frequently incase the system crashes or encounters any problem.
+                  </li>
+                  <li>Maintenance: The IT department will be responsible for maintaining the website and the android application from time to time, and look for bugs in the system.</li>
+                  <li>Security: The IT department will be responsible for enforcing security to avoid data breach.</li>
+                </ol>
+
+                  </p>
+                  <br> <hr>
+                </div>
+
+                <div id="3.2">
+                  <h3>3.2 Client-side</h3>
+                  <p>
+
+                  The client side of our design contains HTTPS requests from Android and Web. All requests are passed through a REST API Framework that fetches the required information and displays it through appropriate format.
+
+                  </p>
+                  <p>
+                  The client be able to visit the application using different devices (Android and Web). The views will be different according to the device, but the functionalities remain the same.
+
+                  <ol>
+                    <li>Login and Registration page: The user will be required to register, or login with his credentials if he is already registered. In order to gain access to the application this is necessary.
+			<p>
+				Android view:
+			</p>
+				<a href="https://ibb.co/r2XjvJG"><img src="https://i.ibb.co/TMNfr5B/Artboard-1-100.jpg" alt="Artboard-1-100" border="0"></a>
+                    </li>
+                    <li>Homepage: After the user logs in, he will be directed to the homepage. The homepage has features depending on the type of user (Ex. The administrator has a button which redirects him to the control page, where he can restrict user, or give him access to a private file).</li>
+                    <li>Scanner: We will not be making a scanner from scratch, but will use a library to provide this feature. The users can utilize the scanner to take pictures of documents, which will then be automatically converted into digitalized versions. The user can then choose to save the file.</li>
+                    <li>Control Page: This page is only accessible via certain types of users (administrator and manager). Through this page the officials can look into user activities, ban user accounts and give permission to access private files.</li>
+                  </ol>
+
+                  </p>
+                  <br> <hr>
+                </div>
+
+
+                <br><br>
+
+              <div id="4"><h1>4. High-level Component Design</h1></div>
+
+		<a href="https://ibb.co/fdq5m3L"><img src="https://i.ibb.co/GQnLgZN/Artboard-1-100.jpg" alt="Artboard-1-100" border="0"></a>
+
+                <br><br>
+
+              <div><h1>5. Class Diagram</h1></div>
+
+                  <div id="5.1">
+                    <h3>5.1 Detailed Class Diagram</h3>
+			                 <a href="https://ibb.co/TLJtGV2"><img src="https://i.ibb.co/SrHBghy/171841264-1583185368554072-5436768254675037563-n.png" alt="171841264-1583185368554072-5436768254675037563-n" border="0"></a>
+                    <br> <hr>
+                  </div>
+
+                  <div id="5.2">
+                    <h3>5.2 Detailed Class Description</h3>
+
+                    Detailed Class Diagram:
+                <ol>
+                  <li>User – purpose is to specify type of people going to use the software and it is the parent class.
+                    <ul>
+                      <li>Attributes:
+                        <ol>
+                          <li>UserName, String, It is the user name.</li>
+                          <li>UserId, Integer, it is a primary key for user class and it is a unique identifier used to identify specific user.</li>
+                          <li>Email</li>
+                          <li>UserPhone</li>
+                        </ol>
+                      </li>
+                      <li>Methods:
+                        <ol>
+                          <li>Login(), void, method is call for  login to the user account.</li>
+                          <li>SubmitLoginInfo(), void, method is for user to submit login information. </li>
+                          <li>viewRecord(), void, method is for viewing records.</li>
+                          <li>ScanDocument()</li>
+                          <li>Logout(), void, method is call for logout of the user account.</li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Manager- It is one of the child class of the User class and the purpose of this class is to show the functionalities a manager is going to perform using the software.
+                    <ul>
+                      <li>Attributes:
+                        <ol>
+                          <li>ManagerID, Integer, to differentiate among other users.</li>
+                          <li>ManagerName, String, It is the name of the manager</li>
+                          <li>ManagerPassword. String, It is the password manager uses to login.</li>
+                          <li>Joined, Date, It is the joining date of manager in the company.</li>
+                        </ol>
+                      </li>
+                      <li>Methods:
+                        <ol>
+                          <li>viewEmp(), void,  method is call for to view employee list.</li>
+                          <li>manages(), void, This method is used for all sort of  manager operations.  </li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Admin- Admin is also a child class. It contains attributes and the operations that an admin will perform using this software
+                    <ul>
+                      <li>Attributes:
+                        <ol>
+                          <li>AdminId, Integer, It is the Admin’s Id.</li>
+                          <li>AdminName, String, It is the admin’s name.</li>
+                          <li>AdminPassword. String, It is the password Admin uses to login.</li>
+                        </ol>
+                      </li>
+                      <li>Methods:
+                        <ol>
+                          <li>viewList(), void, Admin access  the record list.</li>
+                          <li>AddNewRecord(), void, Admin can add new record.</li>
+                          <li>DeleteRecord(), void,  Admin can delete record.</li>
+                          <li>EditRecord(), void, Admin modifies record.</li>
+                          <li>ScanDocument(), void, Method admin uses for scanning document.</li>
+                          <li>AddnewUser(), void, Admin can add new user.</li>
+                          <li>DeleteUser(), void, Admin can delete any user.</li>
+                          <li>ChangePAssword(), Void, Admin changes Password for user.</li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Employee- Employee is also a child class. It contains attributes and the operations that an employee will perform using this software.
+                    <ul>
+                      <li>Attributes:
+                        <ol>
+                          <li>EmpId, Integer, It is the employee’s Id.</li>
+                          <li>EmpName, String, It is the employee’s name.</li>
+                          <li>EmpPassword. String, It is the password employee uses to login.</li>
+                          <li>EmpId, Integer, It is the employee’s Id.</li>
+                          <li>Position, String, It is the employee’s position in the company.</li>
+                          <li>Joined, String, It is the password employee uses to login.</li>
+                        </ol>
+                      </li>
+                      <li>Methods:
+                        <ol>
+                          <li>Registration(), void,  access  the record list.</li>
+                          <li>AddAvatar(), img, Employee can add new record.</li>
+                          <li>Login(), void,  Employee can delete record.</li>
+                          <li>ViewRecord(), void, Employee modifies record.</li>
+                          <li>AddRecord(), void, Employee can add record.</li>
+                          <li>UpdateRecord(), void, Employee can update record.</li>
+                          <li>ScanDocument(), void, Method employee uses for scanning document.</li>
+                          <li>ChangePAssword(), Void, Admin changes Password for user.</li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>System- System will respond to user inputs and give outputs accordingly.
+                    <ul>
+                      <li>Methods:
+                        <ol>
+                          <li>AllowPlatform(), void, It allows platforms via which user can run the software. </li>
+                          <li>DisplayPage(), void, It is where interaction happens between user and the system.</li>
+                          <li>Dashboard(), void, it displays information and user activities are portrayed via it.</li>
+                          <li>Sortlist(), integer, It sorts data and user information after any change is made.</li>
+                          <li>AllowScan(), void, It allows scanning after user click scan button.</li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Account- It is where any account will be created and notified to user.
+                    <ul>
+                      <li>Attributes:
+                        <ol>
+                          <li>AccountId, String, It provides unique id so no mismatch happens.</li>
+                          <li>AccountType, String, It allows creation of different types of account.</li>
+                        </ol>
+                      </li>
+                      <li>Methods:
+                        <ol>
+                          <li>CreateAccount(), void, It assigns an account to the user.</li>
+                          <li>CreateNewUser(), void, It allows new account accounted to be created for a new user.</li>
+                          <li>CreateGroup(), void, a group is assign to specific users after requesting for a group.</li>
+                          <li>ProfileLink(), void, every time a user creates an accounts a link is created along with it.</li>
+                          <li>Notify(), whenever a task is completed it is notified to user.</li>
+                          <li>ResetPassword(), void, It will reset password after user requests for password reset.</li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Record- It is where all files and documents are to be saved after user push any file.
+                    <ul>
+                      <li>Attributes:
+                        <ol>
+                          <li>RecordId, Integer, It is used to access any record.</li>
+                          <li>RecordList, Integer, It is used for categorize records.</li>
+                        </ol>
+                      </li>
+                      <li>Methods:
+                        <ol>
+                          <li>CreateFolder(), void, It creates public and private folders.</li>
+                          <li>Indexing(), integer, It assign index to folders and uploaded files.</li>
+                          <li>SearchFile(), Boolean, It search any file if exists.</li>
+                          <li>LockFolder(), Boolean, It locks specific folders so no user can access.</li>
+                          <li>ArchiveFile(), void, It archive file after a certain time period.</li>
+                          <li>FilterRecords(), void, filters records after any changes have made.</li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Report- It reports specific record, after a record is created.
+                    <ul>
+                      <li>Attributes:
+                        <ol>
+                          <li>ReportId, Integer, It is specific report id of records.</li>
+                        </ol>
+                      </li>
+                      <li>Methods:
+                        <ol>
+                          <li>CountReport(), Integer, It shows total number of records.</li>
+                          <li>Countpage(), Integer, It shows total number of pages under a record.</li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Maintenance- It is used to fix any sort of problem occurs in software.
+                    <ul>
+                      <li>Methods:
+                        <ol>
+                          <li>Notify(), void, It notify where a problem is occure in software.</li>
+                          <li>AllocateTimeLimit(), time, It allocate a time limit within which the error will be fixed.</li>
+                          <li>Telephone(), integer, If a problem further persists then a telephone can be made to fix the issue.</li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Database- It helps to keep information and data organized and easily accessible.
+                    <ul>
+                      <li>Attributes:
+                        <ol>
+                          <li>FileList, integer, it is used to list files in specified tables in database.</li>
+                        </ol>
+                      </li>
+                      <li>Methods:
+                        <ol>
+                          <li>FileAdded(), void, a file is added in database.</li>
+                          <li>FileUpdated(), void, a file is updated in database.</li>
+                          <li>FileRemoved(), void, a file is removed from database.</li>
+                          <li>SearchFile(), void, a file is searched in database.</li>
+                          <li>Retrive(), void, a file is retrieve after it has been found.</li>
+                          <li>FileLocked(), void, a record is locked and lock information is saved in database.</li>
+                          <li>UserAdded(), void, a User record is saved in database.</li>
+                          <li>UserInfoUdated(), void, User information updated in database.</li>
+                          <li>UserRemoved(), void, user removed from database.</li>
+                          <li>UserPasswordChange(), void, User password changed and replaced with the old one.</li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>PaymentSite – It allows payment to be made through software.
+                    <ul>
+                      <li>Attributes:
+                        <ol>
+                          <li>PayId, String, for specific payment id for the installments to be paid.</li>
+                          <li>PayMode, String, Option for different mode.</li>
+                        </ol>
+                      </li>
+                      <li>Methods:
+                        <ol>
+                          <li>CreateTransaction(), void Allow transaction to take place.</li>
+                          <li>InstallmentNo(), void, allow installments to take place accordingly.</li>
+                          <li>AddAmount(), integer, calculate the total amount.</li>
+                          <li>AddVAT(), integer, Add VAT to the a total amount.</li>
+                          <li>ConfirmPayment(), Boolean, Makes successful  payment</li>
+                          <li>Notify(), void, gets notification of successful transaction.</li>
+                        </ol>
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+
+
+
+                    <br> <hr>
+                  </div>
+
+
+                  <br><br>
+
+                  <div id="6"><h1>6. Sequnce Diagrams</h1>
+
+                  <pre> <h2>1.Sequence Diagram : Admin </h2>
+                  <a href="https://ibb.co/8KrwYmV"><img src="https://i.ibb.co/YRcS0NG/172720313-3953898574648192-8448508197788498540-n.png" alt="172720313-3953898574648192-8448508197788498540-n" border="0"></a>
+
+
+                  <h2>2.Sequence Diagram : User </h2>
+                  <a href="https://ibb.co/S3VJR5c"><img src="https://i.ibb.co/gRt6zmd/171497068-145703057418328-4503840917853276377-n.png" alt="171497068-145703057418328-4503840917853276377-n" border="0"></a>
+
+
+                  <h2>3.Sequence Diagram : System </h2>
+                  <a href="https://ibb.co/VwxY4v7"><img src="https://i.ibb.co/CP6KGnk/174395210-203548934611013-2132050514981074075-n.png" alt="174395210-203548934611013-2132050514981074075-n" border="0"></a>
+
+
+
+                  <h2>4.Sequence Diagram : Manager </h2>
+                  <a href="https://ibb.co/WPrpDhN"><img src="https://i.ibb.co/1dCJsgY/173440796-376514370151093-2896547381279574167-n.png" alt="173440796-376514370151093-2896547381279574167-n" border="0"></a>
+
+
+                  </pre>
+
+
+
+
+                  </div>
+
+                <br> <hr>
+
+                <br><br>
+
+
+              <div><h1>7. Database Design</h1></div>
+
+                  <div id="7.1">
+                    <h3>7.1 ER Diagram</h3>
+                    <a href="https://ibb.co/NmJ5jWk"><img src="https://i.ibb.co/wwPVWpb/image.png" alt="image" border="0"></a>
+
+                    <br> <hr>
+                  </div>
+
+                  <div id="7.2">
+                    <h3>7.2 Table Description</h3>
+
+                    <li>User: 
+                      <ol>
+                        <li>Purpose: User will enter the email,address,phone number in order to open a account .</li>
+                        <li>Atrribute Name: Name(Varchar),ID(Varchar), User Email(Varchar),User Adress(Varchar),User Phone Number(int)</li>
+                        <li>Primary key: ID</li>
+                      </ol>
+                    </li>
+                    <li>Manager: 
+                      <ol>
+                        <li>Purpose: Manager will give his information inoder to create  o account.he will give name,id , email,address,Phone number,
+                          Joined date, password</li>
+                        <li>Atrribute Name: Name(Varchar),ID (Varchar),User Email(Varchar),User Adress(Varchar),User Phone Number(int),Joinded date(int),Manager pas(Varchar),</li>
+                        <li>Primary key: ID</li>
+                      </ol>
+                    </li>
+                    <li>Employee: 
+                      <ol>
+                        <li>Purpose: Employee will give his information inoder to create  o account.he will give name,id , email,address,Phone number,
+                          Joined date, password</li>
+                        <li>Atrribute Name: Name(Varchar),ID (Varchar),User Email(Varchar),User Adress(Varchar),User Phone Number(int),Joinded date(int), Employepas(Varchar)</li>
+                        <li>Primary key: ID</li>
+                      </ol>
+                    </li>
+                    <li>Admin: 
+                      <ol>
+                        <li>Purpose:  Admin will give his information inoder to create  o account.he will give name,id , email,address,Phone number,
+                          Joined date, password.</li>
+                        <li>Atrribute Name: Name(Varchar),ID (Varchar),User Email(Varchar),User Adress(Varchar),User Phone Number(int),Joinded date(int), Adminpas(Varchar)</li>
+                        <li>Primary key: ID</li>
+                      </ol>
+                    </li>
+
+                    <li>Maintanance: 
+                      <ol>
+                        <li>Purpose: User can  call for maintanance.where  the Id,time and phone number will be saved</li>
+                        <li>Atrribute Name:ID(Varchar),time (Varchar), phone(int)</li>
+                        <li> Foreign key : ID,Name</li>
+                      </ol>
+                    </li>
+
+                    <li>Account: 
+                      <ol>
+                        <li>Purpose: User ,Employes, Manager, Admin their information will save in this Account Table .</li>
+                        <li>Atrribute Name: ID (Varchar), Name (Varchar)</li>
+                        <li>Primary key: ID</li>
+                      </ol>
+                    </li>
+
+                    <li>Report: 
+                      <ol>
+                        <li>Purpose:User can report a  id for unethical behaviour.Report and reporter id will save in the table.</li>
+                        <li>Atrribute Name:  ID(Varchar),ReportID(Varchar)</li>
+                        <li>Foreign KEY:ID, Primary Key: RerpotID</li>
+                      </ol>
+                    </li>
+                    <li>Payment: 
+                      <ol>
+                        <li>Purpose: User can  pay anymode . The time and payment mode will save in this table.</li>
+                        <li>Atrribute Name: ID(Varchar).PAYMODE(Varchar)</li>
+                        <li>Foreign Key:ID</li>
+                      </ol>
+                    </li>
+                    <li>Record: 
+                      <ol>
+                        <li>Purpose: All the payment information will save in this table time and amount.</li>
+                        <li>Atrribute Name:ID(Varchar), PAYMENT(Varchar),PAYAmount(int)</li>
+                        <li>Foreign Key:ID</li>
+                      </ol>
+                    </li>
+                    <li>System: 
+                      <ol>
+                        <li>Purpose: Purpose:User can add or block any id to access.</li>
+                        <li>Atrribute Name:ID(Varchar),BlockID(Varchar), AcceptID(Varchar)</li>
+                        <li>Forgien key: ID, Primary Key: BlockID</li>
+                      </ol>
+                    </li>
+
+
+
+
+                    <br> <hr>
+                  </div>
+
+                  <br><br>
+
+              <div id="8"><h1>8. Implementation Plan</h1></div>
+
+              <p>
+                We plan to execute the project in the following steps:
+                <ol>
+                  <li>Overall Design of the System: This is the planning period of our project. We have created class diagram, sequence diagram, ER diagram and tried to break down the project for ease of execution. We will later utilize these diagrams to visualize our project. The final product might not be as predicted, but this will surely guide us to reach the oucome we desire.</li>
+                  <li>Frontend: First we are going to create the frontend. We are going to create the frontend of the website using html, css and javascript, whereas we will be using android studio for the frontend of the android.</li>
+                  <li>Backend: After the front end is created, we are going to create the database using firebase. The database might not be identical to what we are proposing through the ER diagram, but it will be very similar. Then we will have to connect the website frontend with Django backend server.</li>
+                  <li>API Framework: We will be requiring to create an API Framework to connect the database with the frontend of the android application </li>
+                  <li>Improvise: We will have to test the applications multiple times under various conditions to find any bug in the system. We will also aim to improve it and keep it updated.</li>
+                </ol>
+
+              </p>
+
+                  <br> <hr>
+
+
+                  <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            </td>
+            </tr>
+        </table>
+    </body>
+</html>
