@@ -1,2 +1,8 @@
-# nabeel_mohammed-spring2021.cse327.1.4
- File Managing with Android and Web(Django)  . Database firebase
+ # This is my CSE327(Software Engineering) Course Project
+ 
+ ## Group Members:
+   * Mohd. Istiaq Hossain Junaid (Web)
+   * Tasfia Amin(Web)
+   * Ahmed Omar(Android)
+   * Sheik Anha(Android)
+   
